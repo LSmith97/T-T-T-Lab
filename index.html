@@ -11,10 +11,13 @@
 
 <body class="flex-ctr">
   <h1>Tic-Tac-Toe!</h1>
+  <h2 id="win"></h2>
   <div id="scorebox">
-    <div>Wins: <span id="win"></span></div>
-    <div>Losses: <span id="loss"></span></div>
-    <div>Ties: <span id="tie"></span></div>
+    <div>Score: </div>
+    <div>X: <span id="x"></span></div>
+    <div>O: <span id="o"></span></div>
+    <div>Ties: <span id="draw"></span></div>
+    <div>Current Turn: <span id="turn"></span></div>
   </div>
   <main>
     <div class="box" id="0">X</div>
@@ -27,6 +30,6 @@
     <div class="box" id="7"></div>
     <div class="box" id="8"></div>
   </main>
-  <button class="hidden">Play Again</button>
+  <button>Reset Game</button>
 </body>
 </html>
