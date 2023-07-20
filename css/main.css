@@ -1,30 +1,42 @@
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Press Start 2P', cursive;
+    color: white;
     box-sizing: border-box;
   }
   
   body {
     height: 100vh;
     flex-direction: column;
+    background-color: rgb(45, 45, 45);
+    background-image: linear-gradient(-45deg,purple,black);
   }
   main {
     display: grid;
-    grid-template-columns: 25vmin 25vmin 25vmin;
-    grid-template-rows: 25vmin 25vmin 25vmin;
-    background-color: black;
-    padding: 1vmin;
+    grid-template-columns: 22vmin 22vmin 22vmin;
+    grid-template-rows: 22vmin 22vmin 21vmin;
+    background-color: rgb(26, 26, 26);
+    background-image: radial-gradient(circle,black,rgb(73, 73, 73),black);
+    padding: 3vmin;
+    border: 2px solid grey;
     border-radius: 4vmin;
   }
   #scorebox {
     padding: 1vmin;
+    margin: 1vmin 0  2vmin 0;
   }
-  #scorebox * {
+  #scorebox > * {
     display: inline;
-    margin: 1vmin;
+    margin: 0 1vmin 0 1vmin;
+    border: 2px solid grey;
+    background-color: rgb(21, 21, 21);
+    border-radius: 1rem;
+    padding: .5rem;
+    font-size: 10px;
   }
 
-  h2 {
-    margin: .5vmin;
+  h1, h2 {
+    color: yellow;
+    margin: .5vmin 0 .5vmin 0;
   }
   
   main * {
@@ -41,13 +53,13 @@
   
   .box {
     justify-self: center;
-    width: 25vmin;
-    height: 25vmin;
-    border: 1vmin solid black;
-    border-radius: 4vmin;
-    font-size: 10rem;
-    text-align: center;
+    width: 20vmin;
+    height: 20vmin;
+    border: 1vmin solid grey;
+    font-family: 'Permanent marker', cursive;
+    font-size: 9rem;
     background-color: white;
+    padding: 1vmin;
   }
   
   .box:hover {
@@ -56,6 +68,8 @@
 
   button {
     margin: 1vmin;
+    background-color: red;
+    padding: .25rem;
   }
 
   .hidden {

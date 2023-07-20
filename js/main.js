@@ -100,7 +100,7 @@ function renderBoard() {
             gridEles[i].style.color = O_COLOR;
         }
         //Change border color to black
-        gridEles[i].style.border = `1vmin solid black`;
+        gridEles[i].style.border = `1vmin solid grey`;
     }
     //If there is a winner, change the border of the winning squares
     winningSquares.forEach(function(idx){
@@ -113,7 +113,7 @@ function renderBoard() {
 }
 
 function renderWinner() {
-    if (winner === 'X' || winner === '0') {
+    if (winner === 'X' || winner === 'O') {
         winEle.style.display = 'block'
         winEle.textContent = `${winner} Wins!`
     } else if (winner === 'draw'){
